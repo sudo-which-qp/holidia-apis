@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@bogeychan/elysia-logger": "^0.1.4",
+    "@elysiajs/bearer": "^1.1.2",
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/jwt": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.6",
+    "@prisma/client": "^6.0.1",
+    "elysia": "^1.1.26",
+    "elysia-ip": "^1.0.7",
+    "elysia-rate-limit": "^4.1.0",
+    "stripe": "^17.4.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^6.0.0"
+  },
+  "module": "src/index.js"
+}
